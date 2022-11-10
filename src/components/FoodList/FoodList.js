@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import App from '../../App'
 import foodsData from '../../foods.json'
 import FoodBox from '../FoodBox/FoodBox'
+import AddFood from '../AddFood/AddFood'
 
 // componente responsável por renderizar a lista e da maioria das operações do CRUD
 function FoodList() {
@@ -16,6 +16,9 @@ function FoodList() {
 
     return (
         <Container>
+            <Row>
+                <AddFood foods={ foods } setFoods={ setFoods } />
+            </Row>
             <Row>
                 { foodMap }
             </Row>
