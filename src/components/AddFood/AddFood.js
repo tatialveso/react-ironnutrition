@@ -24,10 +24,10 @@ function AddFood({ foods, setFoods }) {
         setFoods([...foods, form])
 
         setForm({
-            name: '',
-            calories: '',
-            image: '',
-            servings: ''
+            name: "",
+            calories: "",
+            image: "",
+            servings: ""
         })
     }
 
@@ -40,6 +40,7 @@ function AddFood({ foods, setFoods }) {
                     placeholder="Enter email"
                     name="name"
                     onChange={ handleChange }
+                    value={ form.name }
                 />
             </Form.Group>
             <Form.Group className="mb-3">
@@ -49,6 +50,7 @@ function AddFood({ foods, setFoods }) {
                     placeholder="Enter email"
                     name="image"
                     onChange={ handleChange }
+                    value={ form.image }
                 />
             </Form.Group>
             <Form.Group className="mb-3">
@@ -58,6 +60,7 @@ function AddFood({ foods, setFoods }) {
                     placeholder="Enter email"
                     name="calories"
                     onChange={ handleChange }
+                    value={ form.calories }
                 />
             </Form.Group>
             <Form.Group className="mb-3">
@@ -67,6 +70,7 @@ function AddFood({ foods, setFoods }) {
                     placeholder="Enter email"
                     name="servings"
                     onChange={ handleChange }
+                    value={ form.servings }
                 />
             </Form.Group>
             <Button className="mb-3" variant="primary" type="submit">
