@@ -3,23 +3,39 @@ import { Button, Form } from "react-bootstrap"
 function AddFood() {
     return (
         <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Nome do meu prato</Form.Label>
-                <Form.Control type="text" placeholder="Enter email" />
+            <Form.Group className="mb-3">
+                <Form.Label>Nome do prato</Form.Label>
+                <Form.Control
+                    type="text"
+                    placeholder="Enter email"
+                    name="name"
+                />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3">
                 <Form.Label>Imagem do prato</Form.Label>
-                <Form.Control type="text" placeholder="Enter email" />
+                <Form.Control
+                    type="text"
+                    placeholder="Enter email"
+                    name="image"
+                />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Calorias</Form.Label>
-                <Form.Control type="text" placeholder="Enter email" />
+            <Form.Group className="mb-3">
+                <Form.Label>Calorias do prato</Form.Label>
+                <Form.Control
+                    type="text"
+                    placeholder="Enter email"
+                    name="calories"
+                />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Servings</Form.Label>
-                <Form.Control type="text" placeholder="Enter email" />
+            <Form.Group className="mb-3">
+                <Form.Label>Quantidade de porções</Form.Label>
+                <Form.Control
+                    type="text"
+                    placeholder="Enter email"
+                    name="servings"
+                />
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button className="mb-3" variant="primary" type="submit">
                 Cadastrar
             </Button>
         </Form>
